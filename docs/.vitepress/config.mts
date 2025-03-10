@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: '/lab/', // Добавьте сюда ваш путь (например, /repo/ для GitHub Pages)
+
 
   title: "lab",
   description: "lab IO-36",
@@ -26,5 +26,8 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
     ]
+  },
+  build: {
+    outDir: '../public' // Устанавливаем папку вывода в ../public
   }
 })
