@@ -2,6 +2,8 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: '/lab/', // Добавьте сюда ваш путь (например, /repo/ для GitHub Pages)
+
   title: "lab",
   description: "lab IO-36",
   themeConfig: {
